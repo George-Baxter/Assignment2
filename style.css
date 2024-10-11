@@ -1,0 +1,24 @@
+/* Masthead */
+.masthead {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: #acaee4;
+}
+
+/* Styling body and adding background image */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('italy.png'); /* background italy flag*/
+    background-size: cover;
+    background-position: center; /* centering image */
+    text-align: center; /* centering text */
+}

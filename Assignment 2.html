@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Establishing language-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assignment 2 Pizza ordering website">
+  <meta name="robots" content="no index, nofollow">
+  <title>Assignment 2 Pizza website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <section class="masthead"> <!-- Specifying mast head for css-->
+      <h1>George's Pizza Parlor</h1>
+      <div>
+        <img src="pizza%20logo.jpg" alt="Pizza logo in header"> <!-- Restaurant logo-->
+      </div>
+    </section>
+  </header>
+
+      <section>
+        <div> <!--adding history of the pizza parlor-->
+          <h2>About us!</h2>
+          <p>At George's Pizza Parlor, we’re all about bringing the authentic taste of Italy to your plate! Owned by George Baxter, a pizza aficionado with a deep love for Italian traditions, our parlor has earned a reputation for delicious, hand-crafted pizzas. Located in the heart of the city, we use only the finest ingredients, from our hand-tossed dough to fresh toppings, all based on time-honored family recipes. Whether it’s a classic Margherita or one of our specialty wood-fired pizzas, each bite is made with passion and care. Join us for an unforgettable meal, or order takeout to enjoy a slice of Italy at home!</p>
+        </div>
+        <div>
+          <img src="pizzaguy123.jpg" alt="A pizza delivery person">
+        </div>
+      </section>
+      <section>
+        <h4>Place your order below</h4>
+        <p>We have plenty of options to style your own pizza!</p>
+      </section>
+    <form>
+      <!--List for pizza sizing-->
+      <label for="size">Choose the size of your pizza below</label>
+      <select name="size" id="size">
+        <option> Select Size</option>
+        <option> Small</option>
+        <option> Medium</option>
+        <option> Large</option>
+        <option> Extra large</option>
+      </select>
+      <section>
+        <label for="pizza">How many pizzas would you like</label>
+        <input name="pizza" placeholder="# of pizzas" type="number" id="pizza" required>
+      </section>
+
+      <!--Toppings menu/options-->
+      <p>What toppings would you like?</p>
+      <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni">
+      <label for="pepperoni">Pepperoni</label>
+      <!--Checkbox for Extra cheese-->
+      <input type="checkbox" id="cheese" name="topping" value="Extra Cheese">
+      <label for="cheese">Extra Cheese</label>
+      <!--Checkbox for Banana peppers-->
+      <input type="checkbox" id="banana-peppers" name="topping" value="Banana Peppers">
+      <label for="banana-peppers">Banana Peppers</label>
+      <!--Checkbox for Mushrooms-->
+      <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms">
+      <label for="mushrooms">Mushrooms</label>
+      <!--Checkbox for Black olives-->
+      <input type="checkbox" id="black-olives" name="topping" value="Black Olives">
+      <label for="black-olives">Black Olives</label>
+      <!--Checkbox for Green olives-->
+      <input type="checkbox" id="green-olives" name="topping" value="Green Olives">
+      <label for="green-olives">Green Olives</label>
+      <!--Checkbox for Sausage-->
+      <input type="checkbox" id="sausage" name="topping" value="Sausage">
+      <label for="sausage">Sausage</label>
+      <!--Adding drinks-->
+      <section>
+        <!-- adding drinks to the menu only able to choose one using radio-->
+        <p>Choose a drink:</p>
+        <input type="radio" id="cola" name="drink" value="Coca-Cola" required>
+        <label for="cola">Coca-Cola</label>
+        <!-- Adding water-->
+        <input type="radio" id="fiji-water" name="drink" value="Fiji Water">
+        <label for="fiji-water">Fiji Water</label>
+        <!--adding OJ -->
+        <input type="radio" id="orange-juice" name="drink" value="Orange Juice">
+        <label for="orange-juice">Orange Juice</label>
+      </section>
+      <h5>
+        Please fill out the boxes below with your information and delivery address
+      </h5>
+      <section> <!-- adding customer information menu-->
+        <label for="firstname">Name</label>
+        <input name="firstname" placeholder="Enter your first name here" type="text" id="firstname" required>
+        <label for="lastname">Lastname</label>
+        <input name="lastname" placeholder="Enter your last name here" type="text" id="lastname" required>
+        <label for="email">Email address</label>
+        <input name="email" placeholder="Enter your email address here" type="email" id="email" required>
+        <p>
+          <input type="submit" value="Submit Order Here!"> <!--Adding a submit button-->
+        </p>
+      </section>
+    </form>
+
+    <footer>
+      George Baxter Student #12312321231
+    </footer>
+  </main>
+</body>
+</html>
